@@ -74,7 +74,7 @@ namespace Lab1
             {
                 if (firm == null)
                     throw new MyException("Объект класса не создан");
-                info.Text = "Цена перевозки в шестнадцатиричном представлении: " + firm.PriceToHex();
+                info.Text = "Цена перевозки в шестнадцатеричном представлении: " + firm.PriceToHex();
             }
             catch (MyException ex)
             {
