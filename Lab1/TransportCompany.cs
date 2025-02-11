@@ -23,11 +23,11 @@ namespace Lab1
         {
             price = 0;
             transportedMass = 0;
-            name = "Undefined";
+            name = "";
             rating = 0;
             completedOrders = 0;
-            phoneNumber = "Undefined";
-            email = "Undefined";
+            phoneNumber = "";
+            email = "";
             countObj++;
         }
 
@@ -52,18 +52,19 @@ namespace Lab1
 
         public override string ToString()
         {
-            return "\tТрансопртная компания:\n" + "Название   " + name + "\nцена грузоперевозки   " + price + "\nМасса перевезенных грузов   " + transportedMass +  "\nРейтинг   " + rating + "\nКоличество выполненных заказов   " + completedOrders + "\nНомер компании   " + phoneNumber + "\nПочта компании   " + email;
+            return "\tТрансопртная компания" + "\nНазвание: " + name + "\nЦена грузоперевозки: " + price + "\nМасса перевезенных грузов: " + transportedMass +  "\nРейтинг: " + rating + "\nКоличество выполненных заказов: " + completedOrders + "\nНомер компании: " + phoneNumber + "\nПочта компании: " + email;
         }
 
-        public void PrintName()
+        public string PrintName()
         {
-            Console.WriteLine(name);
+            if (string.IsNullOrEmpty(name))
+                return "У фирмы нет названия";
+            return "Название фирмы: " + name;
         }
 
-        public void PriceToHex()
+        public string PriceToHex()
         {
-            string hexPrice = price.ToString("X");
-            Console.WriteLine(hexPrice);
+            return Convert.ToString(price, 16);
         }
 
 
