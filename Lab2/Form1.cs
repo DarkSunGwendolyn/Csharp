@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace Lab1
+namespace Lab2
 {
     public partial class Form1 : Form
     {
