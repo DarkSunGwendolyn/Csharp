@@ -45,11 +45,11 @@
             this.transportedMass = new System.Windows.Forms.NumericUpDown();
             this.rating = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.priceHex = new System.Windows.Forms.Button();
-            this.nameShow = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.info = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.objCount = new System.Windows.Forms.TextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.price)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.completedOrders)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transportedMass)).BeginInit();
@@ -63,9 +63,9 @@
             this.greetings.Location = new System.Drawing.Point(295, 9);
             this.greetings.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.greetings.Name = "greetings";
-            this.greetings.Size = new System.Drawing.Size(282, 65);
+            this.greetings.Size = new System.Drawing.Size(322, 75);
             this.greetings.TabIndex = 0;
-            this.greetings.Text = "Лабораторная работа № 1. Класс. Статические члены\nкласса. Обработка исключений.\nГ" +
+            this.greetings.Text = "Лабораторная работа № 2. Класс. Статические члены\nкласса. Обработка исключений.\nГ" +
     "руппа: 23ВП2.\nСостав бригады: Соколов, Муравьев.\nВариант 8. Фирма грузоперевозок" +
     "";
             this.greetings.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -76,7 +76,7 @@
             this.label1.Location = new System.Drawing.Point(28, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 26);
+            this.label1.Size = new System.Drawing.Size(68, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Оплата\nперевозки";
             // 
@@ -86,7 +86,7 @@
             this.label2.Location = new System.Drawing.Point(129, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 26);
+            this.label2.Size = new System.Drawing.Size(131, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Масса перевезенных\nгрузов";
             // 
@@ -96,7 +96,7 @@
             this.label3.Location = new System.Drawing.Point(277, 37);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 26);
+            this.label3.Size = new System.Drawing.Size(64, 30);
             this.label3.TabIndex = 3;
             this.label3.Text = "Название\nфирмы";
             // 
@@ -106,7 +106,7 @@
             this.label4.Location = new System.Drawing.Point(376, 37);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
+            this.label4.Size = new System.Drawing.Size(55, 15);
             this.label4.TabIndex = 4;
             this.label4.Text = "Рейтинг";
             // 
@@ -116,7 +116,7 @@
             this.label5.Location = new System.Drawing.Point(458, 37);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 26);
+            this.label5.Size = new System.Drawing.Size(159, 30);
             this.label5.TabIndex = 5;
             this.label5.Text = "Количество выполненных\nзаказов";
             // 
@@ -126,7 +126,7 @@
             this.label6.Location = new System.Drawing.Point(635, 37);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 26);
+            this.label6.Size = new System.Drawing.Size(50, 30);
             this.label6.TabIndex = 6;
             this.label6.Text = "Номер\nфирмы";
             // 
@@ -136,7 +136,7 @@
             this.label7.Location = new System.Drawing.Point(785, 39);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 26);
+            this.label7.Size = new System.Drawing.Size(50, 30);
             this.label7.TabIndex = 7;
             this.label7.Text = "Почта\nфирмы";
             // 
@@ -240,8 +240,7 @@
             // groupBox1
             // 
             this.groupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
-            this.groupBox1.Controls.Add(this.nameShow);
-            this.groupBox1.Controls.Add(this.priceHex);
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.rating);
             this.groupBox1.Controls.Add(this.transportedMass);
             this.groupBox1.Controls.Add(this.enter);
@@ -266,40 +265,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ввод информации";
             // 
-            // priceHex
+            // button1
             // 
-            this.priceHex.Location = new System.Drawing.Point(5, 92);
-            this.priceHex.Name = "priceHex";
-            this.priceHex.Size = new System.Drawing.Size(123, 52);
-            this.priceHex.TabIndex = 21;
-            this.priceHex.Text = "Вывести в шестнадцатиричном представлении";
-            this.priceHex.UseVisualStyleBackColor = true;
-            this.priceHex.Click += new System.EventHandler(this.priceHex_Click);
-            // 
-            // nameShow
-            // 
-            this.nameShow.Location = new System.Drawing.Point(256, 93);
-            this.nameShow.Name = "nameShow";
-            this.nameShow.Size = new System.Drawing.Size(97, 51);
-            this.nameShow.TabIndex = 22;
-            this.nameShow.Text = "Вывести название фирмы";
-            this.nameShow.UseVisualStyleBackColor = true;
-            this.nameShow.Click += new System.EventHandler(this.nameShow_Click);
+            this.button1.Location = new System.Drawing.Point(10, 112);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 35);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Удалить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // info
             // 
             this.info.AutoSize = true;
             this.info.Location = new System.Drawing.Point(295, 153);
             this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(0, 13);
+            this.info.Size = new System.Drawing.Size(0, 15);
             this.info.TabIndex = 16;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(693, 405);
+            this.label8.Location = new System.Drawing.Point(676, 405);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 13);
+            this.label8.Size = new System.Drawing.Size(134, 15);
             this.label8.TabIndex = 17;
             this.label8.Text = "Количество объектов";
             // 
@@ -312,11 +301,21 @@
             this.objCount.TabIndex = 18;
             this.objCount.Text = "0";
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(116, 132);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(659, 231);
+            this.listView1.TabIndex = 19;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(880, 605);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.objCount);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.info);
@@ -324,7 +323,7 @@
             this.Controls.Add(this.greetings);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Лабораторная работа 1";
+            this.Text = "Лабораторная работа 2";
             ((System.ComponentModel.ISupportInitialize)(this.price)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.completedOrders)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transportedMass)).EndInit();
@@ -355,11 +354,11 @@
         private System.Windows.Forms.NumericUpDown transportedMass;
         private System.Windows.Forms.NumericUpDown rating;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button priceHex;
-        private System.Windows.Forms.Button nameShow;
         private System.Windows.Forms.Label info;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox objCount;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
