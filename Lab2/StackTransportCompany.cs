@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab2
 {
-    internal class StackTransportCompany
+    public class StackTransportCompany
     {
         private Stack<TransportCompany> transportCompanies;
 
@@ -19,25 +19,26 @@ namespace Lab2
         public StackTransportCompany()
         {
             this.transportCompanies = new Stack<TransportCompany>();
-
         }
+
+        public Stack<TransportCompany> GetTransportCompanies()
+        {
+            return transportCompanies;
+        }
+
         public void AddCompany(TransportCompany company)
         {
             transportCompanies.Push(company);
-            StackAdded(company);
+            StackAdded?.Invoke(company);
         }
 
         public void DeleteCompany()
         {
-            if (transportCompanies.Count > 0)
-            {
-                TransportCompany top = transportCompanies.Pop();
-                StackRemoved();
-            }
-            else
-            {
+            if (transportCompanies.Count == 0)
                 throw new MyException("Стек пуст");
-            }
+
+            TransportCompany top = transportCompanies.Pop();
+            StackRemoved?.Invoke();
         }
     }
 }

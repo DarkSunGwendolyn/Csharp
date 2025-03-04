@@ -9,34 +9,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Lab2
 {
     public partial class Form1 : Form
     {
-        StackTransportCompany companies;
+        private StackTransportCompany companies;
+        private StackListener stackListener;
 
         public Form1()
         {
             InitializeComponent();
             companies = new StackTransportCompany();
-            companies.StackAdded += OnCompanyAdded;
-            companies.StackRemoved += OnCompanyRemoved;
             InitializeListView();
-            
-        }
 
-        private void OnCompanyAdded(TransportCompany company)
-        {
-            var listItem = new ListViewItem(company.name);
-            listItem.SubItems.Add(company.price.ToString());
-            listItem.SubItems.Add(company.transportedMass.ToString());
-            listItem.SubItems.Add(company.rating.ToString());
-            listItem.SubItems.Add(company.completedOrders.ToString());
-            listItem.SubItems.Add(company.phoneNumber);
-            listItem.SubItems.Add(company.email);
-            listView1.Items.Add(listItem);
-
+            stackListener = new StackListener(companies, listView1, objCount);
         }
 
         private void InitializeListView()
@@ -50,15 +38,8 @@ namespace Lab2
             listView1.Columns.Add("Почта");
             listView1.View = View.Details;
         }
-
-        private void OnCompanyRemoved()
-        {
-            if(listView1.Items.Count > 0)
-            {
-                listView1.Items.RemoveAt(listView1.Items.Count - 1);
-            }
-        }
-        private void enter_Click(object sender, EventArgs e)
+            
+        private void create_Click(object sender, EventArgs e)
         {
             try
             {
@@ -80,21 +61,44 @@ namespace Lab2
                     (int)completedOrders.Value,
                     phoneNumber.Text,
                     email.Text);
-                companies.AddCompany(firm);
-
-                info.Text = firm.ToString();
-
                 objCount.Text = TransportCompany.countObj.ToString();
+                
+                companies.AddCompany(firm);
             }
             catch (MyException ex)
             {
                 MessageBox.Show(ex.Message, "Ошибка");
-            }            
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void delete_Click(object sender, EventArgs e)
         {
-            companies.DeleteCompany();
+            try
+            {
+                TransportCompany.countObj--;
+                companies.DeleteCompany();
+            }
+            catch (MyException ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка");
+            }
+        }
+
+        private void showAll_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+
+            foreach(var company in companies.GetTransportCompanies())
+            {
+                var listItem = new ListViewItem(company.name);
+                listItem.SubItems.Add(company.price.ToString());
+                listItem.SubItems.Add(company.transportedMass.ToString());
+                listItem.SubItems.Add(company.rating.ToString());
+                listItem.SubItems.Add(company.completedOrders.ToString());
+                listItem.SubItems.Add(company.phoneNumber);
+                listItem.SubItems.Add(company.email);
+                listView1.Items.Insert(0, listItem);
+            }
         }
     }
 }

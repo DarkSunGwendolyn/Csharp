@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab2
 {
-    internal class MyException : Exception
+    public class MyException : Exception
     {
         public MyException(string message) : base(message) { }
     }
