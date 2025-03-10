@@ -1,0 +1,30 @@
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\bin\Debug\Lab2.exe
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\bin\Debug\Lab2.pdb
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\obj\Debug\Lab2.exe
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\obj\Debug\Lab2.pdb
+C:\Users\Олег\Desktop\ООП\Csharp\Lab2\obj\Debug\Lab2.Form1.resources
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\bin\Debug\Lab2.exe.config
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\bin\Debug\Lab2.exe
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\bin\Debug\Lab2.pdb
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\obj\Debug\Lab2.Form1.resources
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\obj\Debug\Lab2.exe
+E:\backup\Для учебы\4 семестр\ООП\Lab2\Lab2\obj\Debug\Lab2.pdb
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\bin\Debug\Lab2.exe.config
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\bin\Debug\Lab2.exe
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\bin\Debug\Lab2.pdb
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\obj\Debug\Lab2.csproj.AssemblyReference.cache
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\obj\Debug\Lab2.Form1.resources
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\obj\Debug\Lab2.Properties.Resources.resources
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\obj\Debug\Lab2.csproj.GenerateResource.cache
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\obj\Debug\Lab2.exe
+E:\backup\Для учебы\4 семестр\ООП\Lab3\Lab3\obj\Debug\Lab2.pdb
