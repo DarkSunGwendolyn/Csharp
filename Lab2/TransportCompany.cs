@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab2
 {
-    internal class TransportCompany
+    public class TransportCompany
     {
         public int price { get; set; }
         public float transportedMass { get; set; }
@@ -19,7 +19,7 @@ namespace Lab2
 
         public static int countObj = 0;
 
-    public TransportCompany()
+        public TransportCompany()
         {
             price = 0;
             transportedMass = 0;
@@ -66,7 +66,5 @@ namespace Lab2
         {
             return Convert.ToString(price, 16);
         }
-
-
     }
 }
