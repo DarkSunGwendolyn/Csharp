@@ -58,7 +58,7 @@ namespace Lab2
                 TransportCompany firm;
                 if (prototype == null)
                 {
-                    firm = new TransportCompany(
+                    prototype = new TransportCompany(
                         (int)price.Value,
                         (float)transportedMass.Value,
                         name.Text,
@@ -67,20 +67,18 @@ namespace Lab2
                         phoneNumber.Text,
                         email.Text
                     );
+                }
 
-                    prototype = (TransportCompany)firm.Clone();
-                }
-                else
-                {
-                    firm = (TransportCompany)prototype.Clone();
-                    firm.price = (int)price.Value;
-                    firm.transportedMass = (float)transportedMass.Value;
-                    firm.name = name.Text;
-                    firm.rating = (float)rating.Value;
-                    firm.completedOrders = (int)completedOrders.Value;
-                    firm.phoneNumber = phoneNumber.Text;
-                    firm.email = email.Text;
-                }
+                firm = (TransportCompany)prototype.Clone();
+
+                firm.price = (int)price.Value;
+                firm.transportedMass = (float)transportedMass.Value;
+                firm.name = name.Text;
+                firm.rating = (float)rating.Value;
+                firm.completedOrders = (int)completedOrders.Value;
+                firm.phoneNumber = phoneNumber.Text;
+                firm.email = email.Text;
+
                 objCount.Text = TransportCompany.countObj.ToString();
                 
                 companies.AddCompany(firm);
@@ -124,7 +122,7 @@ namespace Lab2
         private void generate_100000_objects_Click(object sender, EventArgs e)
         {
             Random rand = new Random();
-            int elementCount = 1000;
+            int elementCount = 5000;
 
             TransportCompany baseCompany = new TransportCompany(
                 rand.Next(1000, 10000),
@@ -141,6 +139,7 @@ namespace Lab2
             for (int i = 0; i < elementCount; i++)
             {
                 TransportCompany clonedCompany = (TransportCompany)baseCompany.Clone();
+                clonedCompany.transportedMass = (float)rand.NextDouble() * 100;
                 clonedCompany.name = "Company" + i;
                 clonedCompany.price = rand.Next(1000, 10000);
                 clonedCompany.phoneNumber = "8999" + rand.Next(1000000, 9999999);

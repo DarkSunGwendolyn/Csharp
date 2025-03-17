@@ -52,6 +52,7 @@ namespace Lab2
 
         public object Clone()
         {
+            countObj++;
             return this.MemberwiseClone();
         }
 
