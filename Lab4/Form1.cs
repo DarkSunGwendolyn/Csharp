@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Runtime.InteropServices;
 
 namespace Lab2
 {
@@ -37,6 +38,7 @@ namespace Lab2
             listView1.Columns.Add("Количество заказов");
             listView1.Columns.Add("Номер телефона");
             listView1.Columns.Add("Почта");
+            listView1.Columns.Add("Способ перевозки");
             listView1.View = View.Details;
         }
         
@@ -55,21 +57,39 @@ namespace Lab2
                 if (!Regex.IsMatch(email.Text.Trim(), @"^[a-zA-Z0-9_]+@mail\.ru$"))
                     throw new MyException("Неверный формат почты");
 
+                if (method.SelectedIndex == -1)
+                    throw new MyException("Выберите способ перевозки");
+
                 TransportCompany firm;
+                ITransportMethod curMethod = null;
+                switch (method.SelectedItem.ToString())
+                {
+                    case ("Кораблем"):
+                        curMethod = new ShipTransport();
+                        break;
+                    case ("Грузовиком"):
+                        curMethod = new TrackTransport();
+                        break;
+                    case ("Самолетом"):
+                        curMethod = new AirTransport();
+                        break;
+                }
+
                 if (prototype == null)
                 {
-                    prototype = new TransportCompany(
+                    prototype = new LogisticCompany(
                         (int)price.Value,
                         (float)transportedMass.Value,
                         name.Text,
                         (float)rating.Value,
                         (int)completedOrders.Value,
                         phoneNumber.Text,
-                        email.Text
+                        email.Text,
+                        curMethod
                     );
                 }
 
-                firm = (TransportCompany)prototype.Clone();
+                firm = (LogisticCompany)prototype.Clone();
 
                 firm.price = (int)price.Value;
                 firm.transportedMass = (float)transportedMass.Value;
@@ -78,6 +98,7 @@ namespace Lab2
                 firm.completedOrders = (int)completedOrders.Value;
                 firm.phoneNumber = phoneNumber.Text;
                 firm.email = email.Text;
+                firm.deliverMethod = curMethod;
 
                 objCount.Text = TransportCompany.countObj.ToString();
                 
@@ -115,6 +136,7 @@ namespace Lab2
                 listItem.SubItems.Add(company.completedOrders.ToString());
                 listItem.SubItems.Add(company.phoneNumber);
                 listItem.SubItems.Add(company.email);
+                listItem.SubItems.Add(company.DoWork());
                 listView1.Items.Insert(0, listItem);
             }
         }
@@ -124,26 +146,41 @@ namespace Lab2
             Random rand = new Random();
             int elementCount = 5000;
 
-            TransportCompany baseCompany = new TransportCompany(
+            TransportCompany baseCompany = new LogisticCompany(
                 rand.Next(1000, 10000),
                 (float)rand.NextDouble() * 100,
                 "BaseCompany",
                 (float)(rand.NextDouble() * 5),
                 rand.Next(0, 1000),
                 "89990000000",
-                "basecompany@mail.ru"
+                "basecompany@mail.ru",
+                new TrackTransport()
             );
 
             // Для StackTransportCompany
             int start = Environment.TickCount;
             for (int i = 0; i < elementCount; i++)
             {
+                ITransportMethod curMethod = null;
+                switch (rand.Next(3))
+                {
+                    case 0:
+                        curMethod = new ShipTransport();
+                        break;
+                    case 1:
+                        curMethod = new TrackTransport();
+                        break;
+                    case 2:
+                        curMethod = new AirTransport();
+                        break;
+                }
                 TransportCompany clonedCompany = (TransportCompany)baseCompany.Clone();
                 clonedCompany.transportedMass = (float)rand.NextDouble() * 100;
                 clonedCompany.name = "Company" + i;
                 clonedCompany.price = rand.Next(1000, 10000);
                 clonedCompany.phoneNumber = "8999" + rand.Next(1000000, 9999999);
                 clonedCompany.email = "company" + i + "@mail.ru";
+                clonedCompany.deliverMethod = curMethod;
 
                 companies.AddCompany(clonedCompany);
             }
@@ -171,14 +208,29 @@ namespace Lab2
             start = Environment.TickCount;
             for (int i = 0; i < elementCount; i++)
             {
-                companyArray[i] = new TransportCompany(
+                ITransportMethod curMethod = null;
+                switch (rand.Next(3))
+                {
+                    case 0:
+                        curMethod = new ShipTransport();
+                        break;
+                    case 1:
+                        curMethod = new TrackTransport();
+                        break;
+                    case 2:
+                        curMethod = new AirTransport();
+                        break;
+                }
+
+                companyArray[i] = new LogisticCompany(
                     rand.Next(1000, 10000),
                     (float)rand.NextDouble() * 100,
                     "Company" + i,
                     (float)(rand.NextDouble() * 5),
                     rand.Next(0, 1000),
                     "8999" + rand.Next(1000000, 9999999),
-                    "company" + i + "@mail.ru"
+                    "company" + i + "@mail.ru",
+                    curMethod
                     );
             }
             int insertionTimeArray = Environment.TickCount - start;

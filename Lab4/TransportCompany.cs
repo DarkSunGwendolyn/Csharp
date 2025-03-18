@@ -37,14 +37,14 @@ namespace Lab2
     }
     public abstract class TransportCompany : ICloneable
     {
-        protected ITransportMethod deliverMethod;
-        protected int price { get; set; }
-        protected float transportedMass { get; set; }
-        protected string name { get; set; }
-        protected float rating { get; set; }
-        protected int completedOrders { get; set; }
-        protected string phoneNumber { get; set; }
-        protected string email { get; set; }
+        public ITransportMethod deliverMethod;
+        public int price { get; set; }
+        public float transportedMass { get; set; }
+        public string name { get; set; }
+        public float rating { get; set; }
+        public int completedOrders { get; set; }
+        public string phoneNumber { get; set; }
+        public string email { get; set; }
 
         public static int countObj = 0;
 
@@ -71,7 +71,14 @@ namespace Lab2
             this.name = name;
         }
 
-        public TransportCompany(int price, float transportedMass, string name, float rating, int completedOrders, string phoneNumber, string email, ITransportMethod transportMethod) : this(price, name)
+        public TransportCompany(int price,
+            float transportedMass,
+            string name,
+            float rating,
+            int completedOrders,
+            string phoneNumber,
+            string email,
+            ITransportMethod transportMethod) : this(price, name)
         {
             this.transportedMass = transportedMass;
             this.rating = rating;
@@ -80,7 +87,7 @@ namespace Lab2
             this.email = email;
             this.deliverMethod = transportMethod;
         }
-
+        
         public object Clone()
         {
             countObj++;
@@ -104,19 +111,31 @@ namespace Lab2
             return Convert.ToString(price, 16);
         }
 
-        public virtual void DoWork()
+        public virtual string DoWork()
         {
-            deliverMethod.Deliver();
+            return deliverMethod.Deliver();
         }
     }
 
-    public class LogisticCompany: TransportCompany
+    public class LogisticCompany : TransportCompany
     {
-        public LogisticCompany(int price, float transportedMass, string name, float rating, 
-            int completedOrders, string phoneNumber, string email, 
-            ITransportMethod transportMethod) : base(price, transportedMass, name, rating, completedOrders, phoneNumber, email, transportMethod)
-        {
+        public LogisticCompany() {}
 
+        public LogisticCompany(int price) : base(price) {}
+
+        public LogisticCompany(int price,
+            float transportedMass,
+            string name,
+            float rating,
+            int completedOrders,
+            string phoneNumber,
+            string email,
+            ITransportMethod transportMethod) : base(price, transportedMass, name, rating, completedOrders, 
+                                                     phoneNumber, email, transportMethod) {}
+
+        public override string DoWork()
+        {
+            return deliverMethod.Deliver();
         }
     }
 }

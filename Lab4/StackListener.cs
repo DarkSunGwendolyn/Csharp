@@ -22,6 +22,7 @@ namespace Lab2
                 listItem.SubItems.Add(company.completedOrders.ToString());
                 listItem.SubItems.Add(company.phoneNumber);
                 listItem.SubItems.Add(company.email);
+                listItem.SubItems.Add(company.DoWork());
                 listView.Items.Add(listItem);
                 objCount.Text = TransportCompany.countObj.ToString();
             };
