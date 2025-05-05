@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Lab2
 {
@@ -231,6 +230,7 @@ namespace Lab2
         public void AddCompany(TransportCompany company)
         {
             transportCompanies.Push(company);
+            StackAdded?.Invoke(company);
         }
 
         public void DeleteCompany()
@@ -239,6 +239,7 @@ namespace Lab2
                 throw new MyException("Стек пуст");
 
             TransportCompany top = transportCompanies.Pop();
+            StackRemoved?.Invoke();
         }
     }
 

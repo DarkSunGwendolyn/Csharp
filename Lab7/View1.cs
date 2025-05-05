@@ -17,11 +17,14 @@ namespace Lab2
 {
     public partial class View1 : Form
     {
+
+        
         private Controller controller;
 
         public View1()
         {
             InitializeComponent();
+
             controller = new Controller();
         }
 
@@ -36,7 +39,6 @@ namespace Lab2
                             phoneNumber.Text,
                             email.Text);
 
-                ShowAll();
                 objCount.Text = TransportCompany.countObj.ToString();
             }
             catch (MyException ex)
@@ -47,12 +49,8 @@ namespace Lab2
 
         private void delete_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count > 0)
-                dataGridView1.Rows.RemoveAt(dataGridView1.Rows.Count - 1); ;
-
-            objCount.Text = TransportCompany.countObj.ToString();
+            controller.DeleteCompany();
             TransportCompany.countObj--;
-            MessageBox.Show(controller.DeleteCompany());
         }
 
         private void save_button_Click(object sender, EventArgs e)

@@ -75,9 +75,6 @@ E:\backup\Для учебы\4 семестр\ООП\Lab7\Lab7\obj\Debug\Lab2.csp
 E:\backup\Для учебы\4 семестр\ООП\Lab7\Lab7\obj\Debug\Lab2.exe
 E:\backup\Для учебы\4 семестр\ООП\Lab7\Lab7\obj\Debug\Lab2.pdb
 E:\backup\Для учебы\4 семестр\ООП\Lab7\Lab7\obj\Debug\Lab2.View1.resources
-C:\Users\Олег\Desktop\ООП\Csharp\Lab7\bin\Debug\Lab2.exe.config
-C:\Users\Олег\Desktop\ООП\Csharp\Lab7\bin\Debug\Lab2.exe
-C:\Users\Олег\Desktop\ООП\Csharp\Lab7\bin\Debug\Lab2.pdb
 C:\Users\Олег\Desktop\ООП\Csharp\Lab7\obj\Debug\Lab2.csproj.AssemblyReference.cache
 C:\Users\Олег\Desktop\ООП\Csharp\Lab7\obj\Debug\Lab2.View1.resources
 C:\Users\Олег\Desktop\ООП\Csharp\Lab7\obj\Debug\Lab2.Properties.Resources.resources
@@ -85,3 +82,6 @@ C:\Users\Олег\Desktop\ООП\Csharp\Lab7\obj\Debug\Lab2.csproj.GenerateResou
 C:\Users\Олег\Desktop\ООП\Csharp\Lab7\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
 C:\Users\Олег\Desktop\ООП\Csharp\Lab7\obj\Debug\Lab2.exe
 C:\Users\Олег\Desktop\ООП\Csharp\Lab7\obj\Debug\Lab2.pdb
+C:\Users\Олег\Desktop\ООП\Csharp\Lab7\bin\Debug\Lab2.exe.config
+C:\Users\Олег\Desktop\ООП\Csharp\Lab7\bin\Debug\Lab2.exe
+C:\Users\Олег\Desktop\ООП\Csharp\Lab7\bin\Debug\Lab2.pdb

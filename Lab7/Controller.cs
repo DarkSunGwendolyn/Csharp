@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -67,31 +66,32 @@ namespace Lab2
                 return ex.Message;
             }
         }
-        public void SaveChanges(int idx, string selectedStrategy, string selectedMethod)
-        {
 
-            var transportCompanies = companies.GetTransportCompanies().Reverse().ToList();
-            var company = transportCompanies[idx];
-
-
-                if (selectedStrategy == "По заказам")
-                    company.ratingCalculationStrategy = new OrderBasedRating();
-                else if (selectedStrategy == "По цене")
-                    company.ratingCalculationStrategy = new PriceBasedRating();
-                else if (selectedStrategy == "Комбин.")
-                    company.ratingCalculationStrategy = new MixedRating();
-                company.RecalculateRating();
-
-                if (selectedMethod == new TrackTransport().Deliver())
-                    company.deliverMethod = new TrackTransport();
-                else if (selectedMethod == new ShipTransport().Deliver())
-                    company.deliverMethod = new ShipTransport();
-                else if (selectedMethod == new AirTransport().Deliver())
-                    company.deliverMethod = new AirTransport();
-        }
         public Stack<TransportCompany> GetAll()
         {
             return companies.GetTransportCompanies();
+        }
+
+        public void SaveChanges(int index, string selectedStrategy, string selectedMethod)
+        {
+            var transportCompanies = companies.GetTransportCompanies().Reverse().ToList();
+
+            TransportCompany company = transportCompanies[index];
+
+            if (selectedStrategy == "По заказам")
+                company.ratingCalculationStrategy = new OrderBasedRating();
+            else if (selectedStrategy == "По цене")
+                company.ratingCalculationStrategy = new PriceBasedRating();
+            else if (selectedStrategy == "Комбин.")
+                company.ratingCalculationStrategy = new MixedRating();
+            company.RecalculateRating();
+
+            if (selectedMethod == new TrackTransport().Deliver())
+                company.deliverMethod = new TrackTransport();
+            else if (selectedMethod == new ShipTransport().Deliver())
+                company.deliverMethod = new ShipTransport();
+            else if (selectedMethod == new AirTransport().Deliver())
+                company.deliverMethod = new AirTransport();
         }
     }
 }

@@ -6,12 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Windows.Forms;
-using System.Linq.Expressions;
 
 namespace Lab2
 {
     class View2
     {
+
         private Controller controller;
 
         public string NameCompany { get; private set; }
@@ -24,7 +24,6 @@ namespace Lab2
         public void Run()
         {
             controller = new Controller();
-
             while (true)
             {
                 Console.WriteLine("\nМеню:");
@@ -60,37 +59,24 @@ namespace Lab2
                         PrintCompanies(companies);
                         break;
                     case "4":
-                        if (controller.GetAll().ToList().Count == 0)
-                        {
-                            Console.WriteLine("Список компаний пуст");
-                            break;
-                        }
                         Console.Write("Введите индекс компании (0 — первая): ");
                         int index = int.Parse(Console.ReadLine());
-                        if (index >= controller.GetAll().ToList().Count || index < 0)
-                        {
-                            Console.WriteLine("Нет компании с таким индексом");
-                            break;
-                        }
-                        Console.Write("Выберите стратегию ( По заказам / По цене / Комбин.): ");
+
+                        Console.Write("Выберите стратегию (По заказам / По цене / Комбин.): ");
                         string strategy = Console.ReadLine();
-                        if (strategy != "По заказам" && strategy != "По цене" && strategy != "Комбин.")
-                        {
-                            Console.WriteLine("Нет такой стратегии");
-                            break;
-                        }
-                        Console.Write("Выберите метод доставки (1 - Грузовик / 2 - Корабль / 3 - Самолет): ");
+
+                        Console.Write("Выберите метод доставки (Track / Ship / Air): ");
                         string methodInput = Console.ReadLine();
                         string method = null;
                         switch (methodInput)
                         {
-                            case "1":
+                            case "Track":
                                 method = new TrackTransport().Deliver();
                                 break;
-                            case "2":
+                            case "Ship":
                                 method = new ShipTransport().Deliver();
                                 break;
-                            case "3":
+                            case "Air":
                                 method = new AirTransport().Deliver();
                                 break;
                             default:

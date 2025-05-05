@@ -41,7 +41,7 @@ namespace Lab2
                 AllocConsole();
 
                 // Настройка кодировок для корректного отображения русских символов
-                Console.OutputEncoding = Encoding.UTF8;
+                Console.OutputEncoding = System.Text.Encoding.UTF8;
                 Console.InputEncoding = Encoding.GetEncoding(1251);
 
                 // Перенаправляем вывод в стандартный поток
@@ -59,6 +59,5 @@ namespace Lab2
                 Application.Run(new View1());
             }
         }
-
     }
 }
