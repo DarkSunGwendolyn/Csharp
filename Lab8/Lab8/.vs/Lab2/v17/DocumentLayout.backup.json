@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\view2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:view2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|c:\\users\\\u043E\u043B\u0435\u0433\\desktop\\\u043E\u043E\u043F\\csharp\\lab8\\lab8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:38:47.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Presenter.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\Presenter.cs",
+              "RelativeDocumentMoniker": "Presenter.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\Presenter.cs",
+              "RelativeToolTip": "Presenter.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:05:18.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "View1.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\View1.cs",
+              "RelativeDocumentMoniker": "View1.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\View1.cs",
+              "RelativeToolTip": "View1.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:56:23.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IView.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\IView.cs",
+              "RelativeDocumentMoniker": "IView.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\IView.cs",
+              "RelativeToolTip": "IView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:56:13.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "View2.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\View2.cs",
+              "RelativeDocumentMoniker": "View2.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\View2.cs*",
+              "RelativeToolTip": "View2.cs*",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwGIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:48:30.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\Model.cs",
+              "RelativeDocumentMoniker": "Model.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\Model.cs",
+              "RelativeToolTip": "Model.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:10:33.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\View1.cs",
+              "RelativeDocumentMoniker": "View1.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Lab8\\View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:56:06.147Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

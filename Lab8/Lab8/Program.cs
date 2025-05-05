@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -37,8 +38,8 @@ namespace Lab2
                 AllocConsole();
 
                 // Настройка кодировок для корректного отображения русских символов
-                Console.OutputEncoding = System.Text.Encoding.UTF8;
-                Console.InputEncoding = System.Text.Encoding.UTF8;
+                Console.OutputEncoding =Encoding.UTF8;
+                Console.InputEncoding = Encoding.GetEncoding(1251);
 
                 // Перенаправляем вывод в стандартный поток
                 var writer = new StreamWriter(Console.OpenStandardOutput()) { AutoFlush = true };

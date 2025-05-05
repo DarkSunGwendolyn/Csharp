@@ -1,12 +1,163 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Forms;
+using System.Linq.Expressions;
 
 namespace Lab2
 {
     class View2
     {
+        private Controller controller;
+
+        public string NameCompany { get; private set; }
+        public int Price { get; private set; }
+        public float TransportedMass { get; private set; }
+        public int CompletedOrders { get; private set; }
+        public string PhoneNumber { get; private set; }
+        public string Email { get; private set; }
+
+        public void Run()
+        {
+            controller = new Controller();
+
+            while (true)
+            {
+                Console.WriteLine("\nМеню:");
+                Console.WriteLine("1. Добавить компанию");
+                Console.WriteLine("2. Удалить последнюю компанию");
+                Console.WriteLine("3. Показать все компании");
+                Console.WriteLine("4. Изменить стратегию и метод доставки");
+                Console.WriteLine("0. Выход");
+
+                Console.Write("Выбор: ");
+                string input = Console.ReadLine();
+
+                switch (input)
+                {
+                    case "1":
+                        try
+                        {
+                            ReadCompanyInput();
+                            controller.CreateCompany(Price, TransportedMass, NameCompany, CompletedOrders, PhoneNumber, Email);
+                            Console.WriteLine("Компания добавлена.");
+                            break;
+                        }
+                        catch (MyException ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                            break;
+                        }
+                    case "2":
+                        Console.WriteLine(controller.DeleteCompany());
+                        break;
+                    case "3":
+                        var companies = controller.GetAll();
+                        PrintCompanies(companies);
+                        break;
+                    case "4":
+                        if (controller.GetAll().ToList().Count == 0)
+                        {
+                            Console.WriteLine("Список компаний пуст");
+                            break;
+                        }
+                        Console.Write("Введите индекс компании (0 — первая): ");
+                        int index = int.Parse(Console.ReadLine());
+                        if (index >= controller.GetAll().ToList().Count || index < 0)
+                        {
+                            Console.WriteLine("Нет компании с таким индексом");
+                            break;
+                        }
+                        Console.Write("Выберите стратегию ( По заказам / По цене / Комбин.): ");
+                        string strategy = Console.ReadLine();
+                        if (strategy != "По заказам" && strategy != "По цене" && strategy != "Комбин.")
+                        {
+                            Console.WriteLine("Нет такой стратегии");
+                            break;
+                        }
+                        Console.Write("Выберите метод доставки (1 - Грузовик / 2 - Корабль / 3 - Самолет): ");
+                        string methodInput = Console.ReadLine();
+                        string method = null;
+                        switch (methodInput)
+                        {
+                            case "1":
+                                method = new TrackTransport().Deliver();
+                                break;
+                            case "2":
+                                method = new ShipTransport().Deliver();
+                                break;
+                            case "3":
+                                method = new AirTransport().Deliver();
+                                break;
+                            default:
+                                Console.WriteLine("Неверный ввод");
+                                break;
+                        }
+                        controller.SaveChanges(index, strategy, method);
+                        Console.WriteLine("Изменения сохранены.");
+                        break;
+                    case "0":
+                        return;
+                    default:
+                        Console.WriteLine("Неверный ввод.");
+                        break;
+                }
+            }
+        }
+
+        private void ReadCompanyInput()
+        {
+            Console.Write("Название компании: ");
+            NameCompany = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(NameCompany))
+                throw new MyException("Название компании не может быть пустым.");
+
+            Console.Write("Цена: ");
+            if (!int.TryParse(Console.ReadLine(), out int price) || price < 0)
+                throw new MyException("Некорректная цена.");
+            Price = price;
+
+            Console.Write("Перевезённая масса: ");
+            if (!float.TryParse(Console.ReadLine(), out float mass) || mass < 0)
+                throw new MyException("Некорректная масса.");
+            TransportedMass = mass;
+
+            Console.Write("Количество завершённых заказов: ");
+            if (!int.TryParse(Console.ReadLine(), out int orders) || orders < 0)
+                throw new MyException("Некорректное количество заказов.");
+            CompletedOrders = orders;
+
+            Console.Write("Телефон (11 цифр): ");
+            PhoneNumber = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(PhoneNumber) || PhoneNumber.Length != 11 || !PhoneNumber.All(char.IsDigit))
+                throw new MyException("Некорректный номер телефона.");
+
+            Console.Write("Email (@mail.ru): ");
+            Email = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(Email) || !Email.EndsWith("@mail.ru"))
+                throw new MyException("Некорректный email. Должен заканчиваться на @mail.ru.");
+        }
+
+
+        private void PrintCompanies(Stack<TransportCompany> companies)
+        {
+            if (companies == null || companies.Count == 0)
+            {
+                Console.WriteLine("\nСписок компаний пуст.");
+                return;
+            }
+
+            Console.WriteLine("\nСписок компаний:");
+            var list = companies.Reverse().ToList();
+            for (int i = 0; i < list.Count; i++)
+            {
+                var c = list[i];
+                Console.WriteLine($"[{i}] {c.name} | Цена: {c.price} | Масса: {c.transportedMass} | Заказов: {c.completedOrders} | Рейтинг: {c.rating} | Стратегия: {c.ratingCalculationStrategy.TypeOfRating()} | Метод: {c.DoWork()}");
+            }
+        }
     }
 }

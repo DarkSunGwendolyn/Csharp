@@ -34,7 +34,7 @@ namespace Lab2
         public View1()
         {
             InitializeComponent();
-            var presenter = new Presenter(dataGridView1, objCount, this);
+            var presenter = new Presenter(this);
         }
 
         private void create_Click(object sender, EventArgs e)

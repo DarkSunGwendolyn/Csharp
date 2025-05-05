@@ -15,7 +15,7 @@ namespace Lab2
         public event GetAll GetAllCalled;
         public event SaveChanges SaveChangesClicked;
 
-        public string NameCompany { get; private set; }
+        public string NameCompany { get; private set;}
         public int Price { get; private set; }
         public float TransportedMass { get; private set; }
         public int CompletedOrders { get; private set; }
@@ -24,6 +24,8 @@ namespace Lab2
 
         public void Run()
         {
+           var presenter = new Presenter(this);
+
             while (true)
             {
                 Console.WriteLine("\nМеню:");
@@ -59,24 +61,37 @@ namespace Lab2
                         PrintCompanies(companies);
                         break;
                     case "4":
+                        if (GetAllCalled?.Invoke().ToList().Count == 0)
+                        {
+                            Console.WriteLine("Список компаний пуст");
+                            break;
+                        }
                         Console.Write("Введите индекс компании (0 — первая): ");
                         int index = int.Parse(Console.ReadLine());
-
-                        Console.Write("Выберите стратегию (По заказам / По цене / Комбин.): ");
+                        if (index >= GetAllCalled?.Invoke().ToList().Count || index < 0)
+                        {
+                            Console.WriteLine("Нет компании с таким индексом");
+                            break;
+                        }
+                        Console.Write("Выберите стратегию ( По заказам / По цене / Комбин.): ");
                         string strategy = Console.ReadLine();
-
-                        Console.Write("Выберите метод доставки (Track / Ship / Air): ");
+                        if (strategy != "По заказам" && strategy != "По цене" && strategy != "Комбин.")
+                        {
+                            Console.WriteLine("Нет такой стратегии");
+                            break;
+                        }
+                        Console.Write("Выберите метод доставки (1 - Грузовик / 2 - Корабль / 3 - Самолет): ");
                         string methodInput = Console.ReadLine();
                         string method = null;
                         switch (methodInput)
                         {
-                            case "Track":
+                            case "1":
                                 method = new TrackTransport().Deliver();
                                 break;
-                            case "Ship":
+                            case "2":
                                 method = new ShipTransport().Deliver();
                                 break;
-                            case "Air":
+                            case "3":
                                 method = new AirTransport().Deliver();
                                 break;
                             default:

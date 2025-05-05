@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\",
+  "WorkspaceRootPath": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|c:\\users\\\u043E\u043B\u0435\u0433\\desktop\\\u043E\u043E\u043F\\newrepos\\lab8\\view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|c:\\users\\\u043E\u043B\u0435\u0433\\desktop\\\u043E\u043E\u043F\\csharp\\lab8\\view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:presenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{825D7142-B9C2-4B53-A3B9-AFFF4A5AEBD2}|Lab2.csproj|solutionrelative:view1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "View1.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\View1.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\View1.cs",
               "RelativeDocumentMoniker": "View1.cs",
-              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\View1.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\View1.cs",
               "RelativeToolTip": "View1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T13:49:43.585Z",
               "IsPinned": true,
@@ -50,9 +50,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "IView.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\IView.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\IView.cs",
               "RelativeDocumentMoniker": "IView.cs",
-              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\IView.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\IView.cs",
               "RelativeToolTip": "IView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,13 +60,21 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\View1.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\View1.cs",
               "RelativeDocumentMoniker": "View1.cs",
               "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "..\\..\\NewRepos\\Lab8\\View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T13:34:13.74Z"
             },
@@ -74,9 +82,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Model.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\Model.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Model.cs",
               "RelativeDocumentMoniker": "Model.cs",
-              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\Model.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Model.cs",
               "RelativeToolTip": "Model.cs",
               "ViewState": "AgIAAN0AAAAAAAAAAAAmwPwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -86,9 +94,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Presenter.cs",
-              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\Presenter.cs",
+              "DocumentMoniker": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Presenter.cs",
               "RelativeDocumentMoniker": "Presenter.cs",
-              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\Presenter.cs",
+              "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\Csharp\\Lab8\\Presenter.cs",
               "RelativeToolTip": "Presenter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

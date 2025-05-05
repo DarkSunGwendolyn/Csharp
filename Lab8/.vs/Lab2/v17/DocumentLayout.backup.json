@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "View1.cs",
               "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\View1.cs",
               "RelativeToolTip": "View1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T13:49:43.585Z",
               "IsPinned": true,
@@ -57,8 +57,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T14:54:05.313Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -69,8 +68,7 @@
               "ToolTip": "C:\\Users\\\u041E\u043B\u0435\u0433\\Desktop\\\u041E\u041E\u041F\\NewRepos\\Lab8\\View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "View1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:34:13.74Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2025-04-21T13:34:13.74Z"
             },
             {
               "$type": "Document",
@@ -82,8 +80,7 @@
               "RelativeToolTip": "Model.cs",
               "ViewState": "AgIAAN0AAAAAAAAAAAAmwPwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:32:26.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T13:32:26.986Z"
             },
             {
               "$type": "Document",
@@ -95,8 +92,7 @@
               "RelativeToolTip": "Presenter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:32:24.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T13:32:24.573Z"
             }
           ]
         }
