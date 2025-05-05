@@ -80,6 +80,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View2.cs" />
     <EmbeddedResource Include="View1.resx">
       <DependentUpon>View1.cs</DependentUpon>
     </EmbeddedResource>

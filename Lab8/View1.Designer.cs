@@ -43,11 +43,9 @@
             this.create = new System.Windows.Forms.Button();
             this.transportedMass = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.generate_100000_objects = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.objCount = new System.Windows.Forms.TextBox();
-            this.showAll = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,7 +72,7 @@
             this.greetings.Name = "greetings";
             this.greetings.Size = new System.Drawing.Size(218, 52);
             this.greetings.TabIndex = 0;
-            this.greetings.Text = "Лабораторная работа № 7. Паттерн MVC.\r\nГруппа: 23ВП2.\r\nСостав бригады: Соколов, М" +
+            this.greetings.Text = "Лабораторная работа № 8. Паттерн MVР.\r\nГруппа: 23ВП2.\r\nСостав бригады: Соколов, М" +
     "уравьев.\r\nВариант 8. Фирма грузоперевозок";
             this.greetings.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -225,7 +223,6 @@
             // groupBox1
             // 
             this.groupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Caret;
-            this.groupBox1.Controls.Add(this.generate_100000_objects);
             this.groupBox1.Controls.Add(this.delete);
             this.groupBox1.Controls.Add(this.transportedMass);
             this.groupBox1.Controls.Add(this.create);
@@ -248,16 +245,6 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ввод информации";
-            // 
-            // generate_100000_objects
-            // 
-            this.generate_100000_objects.Location = new System.Drawing.Point(379, 112);
-            this.generate_100000_objects.Name = "generate_100000_objects";
-            this.generate_100000_objects.Size = new System.Drawing.Size(114, 35);
-            this.generate_100000_objects.TabIndex = 22;
-            this.generate_100000_objects.Text = "Создать 100000 объектов";
-            this.generate_100000_objects.UseVisualStyleBackColor = true;
-            this.generate_100000_objects.Click += new System.EventHandler(this.generate_100000_objects_Click);
             // 
             // delete
             // 
@@ -286,16 +273,6 @@
             this.objCount.Size = new System.Drawing.Size(52, 20);
             this.objCount.TabIndex = 18;
             this.objCount.Text = "0";
-            // 
-            // showAll
-            // 
-            this.showAll.Location = new System.Drawing.Point(355, 356);
-            this.showAll.Name = "showAll";
-            this.showAll.Size = new System.Drawing.Size(167, 48);
-            this.showAll.TabIndex = 20;
-            this.showAll.Text = "Вывести все фирмы";
-            this.showAll.UseVisualStyleBackColor = true;
-            this.showAll.Click += new System.EventHandler(this.showAll_Click);
             // 
             // dataGridView1
             // 
@@ -422,14 +399,13 @@
             this.ClientSize = new System.Drawing.Size(880, 595);
             this.Controls.Add(this.save_button);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.showAll);
             this.Controls.Add(this.objCount);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.greetings);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "View1";
-            this.Text = "Лабораторная работа 7";
+            this.Text = "Лабораторная работа 8";
             ((System.ComponentModel.ISupportInitialize)(this.price)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.completedOrders)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transportedMass)).EndInit();
@@ -461,8 +437,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox objCount;
         private System.Windows.Forms.Button delete;
-        private System.Windows.Forms.Button showAll;
-        private System.Windows.Forms.Button generate_100000_objects;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

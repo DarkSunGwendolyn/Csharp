@@ -9,10 +9,9 @@ using System.Windows.Forms;
 namespace Lab2
 {
     public delegate void Add(int price, float transportedMass, string name,int completedOrders, string phoneNumber, string email);
-    public delegate void Remove();
-    public delegate void ShowAll(DataGridView table);
-    public delegate void SaveChanges(DataGridView table);
-    public delegate void Generate_100000_Oblects(DataGridView table, TextBox objCount);
+    public delegate string Remove();
+    public delegate Stack<TransportCompany> GetAll();
+    public delegate void SaveChanges(int index, string selectedStrategy, string selectedMethod);
     public interface IView
     {
         string NameCompany { get; }
@@ -30,9 +29,7 @@ namespace Lab2
 
         event Remove RemoveClicked;
 
-        event Generate_100000_Oblects Generate_100000_objs_clicked;
-
-        event ShowAll ShowAllClicked;
+        event GetAll GetAllCalled;
 
         event SaveChanges SaveChangesClicked;
 
